@@ -1,0 +1,23 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+
+
+<?= $this->form ?>
+
+<div class="form-popup form-popup_default fp-middle <?= !empty($this->popupText) ? 'fp-active' : '' ?>">
+    <div class="fp-inner">
+        <div id="form-popup-desc">
+            <div>
+                <?= $this->popupText ?>
+            </div>
+        </div>
+        <div class="fp-footer">
+            <button class="success fp-btn">Schließen</button>
+        </div>
+    </div>
+</div>
+
+
+<?php $this->endblock(); ?>
