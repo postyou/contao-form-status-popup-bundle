@@ -1,7 +1,6 @@
 {
     "name": "postyou/contao-form-status-popup-bundle",
     "description": "Form Pop-up Bundle",
-    "version": "1.0",
     "keywords": [
         "contao",
         "bundle",
