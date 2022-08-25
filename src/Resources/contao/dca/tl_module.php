@@ -27,5 +27,5 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['popup_text'] = array(
     'inputType'               => 'textarea',
     'eval'                    => array('allowHtml' => true, 'class' => 'monospace', 'rte' => 'tinyMCE', 'helpwizard' => true),
     'explanation'             => 'insertTags',
-    'sql'                     => "text not NULL default ''"
+    'sql'                     => "varchar(1024) NOT NULL default ''"
 );

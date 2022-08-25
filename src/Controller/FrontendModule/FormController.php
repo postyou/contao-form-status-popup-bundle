@@ -49,7 +49,7 @@ class FormController extends AbstractFrontendModuleController
      */
     protected function getResponse(Template $template, ModuleModel $model, Request $request): ?Response
     {
-        $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/postyoucontaoformstatuspopup/js/script.js';
+        $GLOBALS['TL_BODY'][] = \Contao\Template::generateScriptTag('bundles/postyoucontaoformstatuspopup/js/script.js');
 
         /** @var Session $session */
         $session = $request->getSession();

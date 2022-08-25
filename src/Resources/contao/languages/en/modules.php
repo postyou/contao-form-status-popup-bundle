@@ -18,4 +18,4 @@ use Postyou\ContaoFormStatusPopupBundle\Controller\FrontendModule\FormController
  * Frontend modules
  */
 $GLOBALS['TL_LANG']['FMD']['form_modules'] = 'Formular Send Status Pop-up';
-$GLOBALS['TL_LANG']['FMD'][FormController::TYPE] = ['Form Popup nach abschicken', 'Form Popup nach abschicken'];
+$GLOBALS['TL_LANG']['FMD'][FormController::TYPE] = ['Popup nach Form abschicken', 'Popup nach Form abschicken'];
