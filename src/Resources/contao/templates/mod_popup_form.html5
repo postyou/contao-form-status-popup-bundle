@@ -4,15 +4,17 @@
 
 <?= $this->form ?>
 
-<div class="form-popup form-popup_default fp-middle <?= !empty($this->popupText) ? 'fp-active' : '' ?>">
-    <div class="fp-inner">
-        <div id="form-popup-desc">
-            <div>
-                <?= $this->popupText ?>
+<div class="overlay form-popup  form-popup_default fp-middle <?= !empty($this->popupText) ? 'fp-active' : '' ?>">
+    <div class="overlay_inside">
+        <div class="overlay-content fp-inner ">
+            <div class="form-popup-desc">
+                <div>
+                    <?= $this->popupText ?>
+                </div>
             </div>
-        </div>
-        <div class="fp-footer">
-            <button class="success fp-btn">Schließen</button>
+            <div class="fp-footer">
+                <a class="success button fp-btn">Schließen</a>
+            </div>
         </div>
     </div>
 </div>

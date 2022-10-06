@@ -1,5 +1,6 @@
 let popup = document.querySelector('.form-popup');
 popup.querySelector('.success.fp-btn').addEventListener('click', () => {
     popup.classList.add('fp-saved');
-    // popup.classList.remove('fp-active');
+    document.html.classList.remove('noScroll');
+    document.body.classList.remove('noScroll');
 })
