@@ -9,6 +9,7 @@
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",
+    "canonical": false,
     "authors": [
         {
             "name": "PostYou - Mateusz",
