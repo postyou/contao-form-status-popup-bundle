@@ -32,9 +32,6 @@
         "symfony/phpunit-bridge": "4.4.*"
     },
     "autoload": {
-        "psr-4": {
-            "Postyou\\ContaoFormStatusPopupBundle\\": "src/"
-        },
         "classmap": [
             "src/Resources/contao"
         ],

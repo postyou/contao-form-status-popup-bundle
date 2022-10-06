@@ -2,8 +2,6 @@
 
 <?php $this->block('content'); ?>
 
-
-
 <?= $this->form ?>
 
 <div class="form-popup form-popup_default fp-middle <?= !empty($this->popupText) ? 'fp-active' : '' ?>">
