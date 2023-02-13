@@ -24,10 +24,12 @@ class OutputFrontendTemplateListener
                 $session->set('showPopup', null);
                 $session->set('formId', null);
 
+                $script = \Contao\Template::generateScriptTag('bundles/postyoucontaoformstatuspopup/js/script.js');
+
                 $popupTemplate = new FrontendTemplate('confirmation_popup');
                 $form = FormModel::findById($formId);
                 $popupTemplate->popupText = $form->popup_text;
-                $buffer = str_replace("</body>", $popupTemplate->parse() . "</body>", $buffer);
+                $buffer = str_replace("</body>", $popupTemplate->parse() . $script . "</body>", $buffer);
             }
         }
 

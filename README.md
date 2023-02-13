@@ -1,2 +1,4 @@
 # Welcome to Postyou Form Pop-up Bundle
-This bundle is still under construction.
+
+Text can be added inside Form options.
+No styles included.
