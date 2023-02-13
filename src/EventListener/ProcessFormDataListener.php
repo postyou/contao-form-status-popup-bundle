@@ -19,5 +19,6 @@ class ProcessFormDataListener
     ): void {
         $session = \System::getContainer()->get("session");
         $session->set('showPopup', true);
+        $session->set('formId', $form->id);
     }
 }

@@ -1,13 +1,3 @@
 services:
-    # Contao frontend module Postyou\ContaoFormStatusPopupBundle\Controller\FrontendModule\FormController
-    # We used annotations for tagging the frontend module category, the frontend module type and the frontend module template
-    Postyou\ContaoFormStatusPopupBundle\Controller\FrontendModule\FormController:
-        tags:
-            - { name: container.service_subscriber }
-        public: true
-        # Since Symfony 5 the container has to be set manually
-        calls:
-            - [setContainer, ['@Psr\Container\ContainerInterface']]
     Postyou\ContaoFormStatusPopupBundle\EventListener\ProcessFormDataListener:
-        # tags:
-        #     - { name: contao.hook, hook: processFormData, priority: 10 }
+    Postyou\ContaoFormStatusPopupBundle\EventListener\OutputFrontendTemplateListener:
