@@ -3,12 +3,12 @@
   <body>
     <file>
       <trans-unit id="tl_form.confirmation_popup">
-        <source>Confitmation Pop-up</source>
+        <source>Confirmation Pop-up</source>
         <target>Bestätigungs Pop-up</target>
       </trans-unit>
       <trans-unit id="tl_form.show_popup.0">
         <source>Show Pop-up after Form was sended</source>
-        <target>Zeig das Pop-up nach Formular absendung</target>
+        <target>Zeige Formularbestätigung in Popup</target>
       </trans-unit>
     </file>
   </body>
