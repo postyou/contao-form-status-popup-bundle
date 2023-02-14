@@ -1,3 +1,3 @@
 services:
-    Postyou\ContaoFormStatusPopupBundle\EventListener\ProcessFormDataListener:
-    Postyou\ContaoFormStatusPopupBundle\EventListener\OutputFrontendTemplateListener:
+    Postyou\ContaoFormDispatchConfirmationBundle\EventListener\ProcessFormDataListener:
+    Postyou\ContaoFormDispatchConfirmationBundle\EventListener\OutputFrontendTemplateListener:

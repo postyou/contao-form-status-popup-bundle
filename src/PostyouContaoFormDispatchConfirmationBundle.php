@@ -18,9 +18,9 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class PostyouContaoFormStatusPopupBundle
+ * Class PostyouContaoFormDispatchConfirmationBundle
  */
-class PostyouContaoFormStatusPopupBundle extends Bundle
+class PostyouContaoFormDispatchConfirmationBundle extends Bundle
 {
 	/**
 	 * {@inheritdoc}
@@ -28,6 +28,5 @@ class PostyouContaoFormStatusPopupBundle extends Bundle
 	public function build(ContainerBuilder $container): void
 	{
 		parent::build($container);
-		
 	}
 }
