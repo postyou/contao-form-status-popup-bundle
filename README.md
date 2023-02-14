@@ -1,4 +1,4 @@
-# Welcome to Postyou Form Dispatch Confirmation Bundle
+# Form Dispatch Confirmation Bundle
 
 Shows the form confirmation in a popup instead of a separate page. The text can be added inside the form options.
 
