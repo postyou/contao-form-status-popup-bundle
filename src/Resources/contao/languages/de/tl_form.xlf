@@ -7,7 +7,7 @@
         <target>Bestätigungs Pop-up</target>
       </trans-unit>
       <trans-unit id="tl_form.show_popup.0">
-        <source>Show Pop-up after Form was sended</source>
+        <source>Show Pop-up after Form was sent</source>
         <target>Zeige Formularbestätigung in Popup</target>
       </trans-unit>
     </file>
