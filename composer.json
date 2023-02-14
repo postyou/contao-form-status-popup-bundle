@@ -1,7 +1,6 @@
 {
     "name": "postyou/contao-form-dispatch-confitmation-bundle",
     "description": "Confirmation pop-up after form dispatch",
-    "version": "10.1.1",
     "keywords": [
         "contao",
         "bundle",
