@@ -25,7 +25,7 @@ class OutputFrontendTemplateListener
                 $session->remove('showPopup');
                 $session->remove('formId');
 
-                $script = \Contao\Template::generateScriptTag('bundles/postyoucontaoformstatuspopup/js/script.js');
+                $script = \Contao\Template::generateScriptTag('bundles/postyoucontaoformdispatchconfirmation/js/script.js');
 
                 $popupTemplate = new FrontendTemplate('confirmation_popup');
                 $form = FormModel::findById($formId);

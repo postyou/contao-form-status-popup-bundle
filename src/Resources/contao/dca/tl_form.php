@@ -11,7 +11,7 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
  * @license GPL-3.0-or-later
  * For the full copyright and license information,
  * please view the LICENSE file that was distributed with this source code.
- * @link https://github.com/postyou/contao-form-status-popup-bundle
+ * @link https://github.com/postyou/contao-form-dispatch-confirmation
  */
 
 $GLOBALS['TL_DCA']['tl_form']['palettes']['__selector__'][] = "show_popup";
