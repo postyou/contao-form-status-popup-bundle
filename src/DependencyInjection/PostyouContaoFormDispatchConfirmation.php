@@ -12,7 +12,7 @@ declare(strict_types=1);
  * @link https://github.com/postyou/contao-form-status-popup-bundle
  */
 
-namespace Postyou\ContaoFormStatusPopupBundle\DependencyInjection;
+namespace Postyou\ContaoFormDispatchConfirmationBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -20,9 +20,9 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * Class PostyouContaoFormStatusPopupExtension
+ * Class PostyouContaoFormDispatchConfirmation
  */
-class PostyouContaoFormStatusPopupExtension extends Extension
+class PostyouContaoFormDispatchConfirmation extends Extension
 {
 
     /**
@@ -39,6 +39,5 @@ class PostyouContaoFormStatusPopupExtension extends Extension
         $loader->load('parameters.yml');
         $loader->load('services.yml');
         $loader->load('listener.yml');
-
     }
 }

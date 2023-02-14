@@ -1,10 +1,11 @@
 <?php
 
-namespace Postyou\ContaoFormStatusPopupBundle\EventListener;
+namespace Postyou\ContaoFormDispatchConfirmationBundle\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\FormModel;
 use Contao\FrontendTemplate;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 /**
  * @Hook("outputFrontendTemplate")
@@ -16,13 +17,13 @@ class OutputFrontendTemplateListener
 
         if ($template === 'fe_page') {
 
-            $session = \System::getContainer()->get("session");
+            $session = new Session();
             $popup = $session->get('showPopup');
             $formId = $session->get('formId');
 
-            if ($popup && $formId != null) {
-                $session->set('showPopup', null);
-                $session->set('formId', null);
+            if ($popup && $formId) {
+                $session->remove('showPopup');
+                $session->remove('formId');
 
                 $script = \Contao\Template::generateScriptTag('bundles/postyoucontaoformstatuspopup/js/script.js');
 

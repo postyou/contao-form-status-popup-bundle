@@ -1,9 +1,10 @@
 <?php
 
-namespace Postyou\ContaoFormStatusPopupBundle\EventListener;
+namespace Postyou\ContaoFormDispatchConfirmationBundle\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\Form;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 /**
  * @Hook("processFormData")
@@ -17,7 +18,7 @@ class ProcessFormDataListener
         array $labels,
         Form $form
     ): void {
-        $session = \System::getContainer()->get("session");
+        $session = new Session();
         $session->set('showPopup', true);
         $session->set('formId', $form->id);
     }

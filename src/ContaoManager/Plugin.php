@@ -12,7 +12,7 @@ declare(strict_types=1);
  * @link https://github.com/postyou/contao-form-status-popup-bundle
  */
 
-namespace Postyou\ContaoFormStatusPopupBundle\ContaoManager;
+namespace Postyou\ContaoFormDispatchConfirmationBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -29,7 +29,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('Postyou\ContaoFormStatusPopupBundle\PostyouContaoFormStatusPopupBundle')
+            BundleConfig::create('Postyou\ContaoFormDispatchConfirmationBundle\PostyouContaoFormDispatchConfirmationBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle']),
         ];
     }

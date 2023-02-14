@@ -1,4 +1,4 @@
-<div class="overlay form-popup form-popup_default fp-middle <?= !empty($this->popupText) ? 'fp-active' : '' ?>">
+<div class="overlay form-popup<?= !empty($this->popupText) ? ' fp-active' : '' ?>">
     <div class="overlay_inside">
         <div class="overlay-content fp-inner ">
             <div class="form-popup-desc">

@@ -1,5 +1,5 @@
 {
-    "name": "postyou/contao-form-status-popup-bundle",
+    "name": "postyou/contao-form-dispatch-confitmation-bundle",
     "description": "Form Pop-up Bundle",
     "keywords": [
         "contao",
@@ -18,8 +18,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/postyou/contao-form-status-popup-bundle/issues",
-        "source": "https://github.com/postyou/contao-form-status-popup-bundle"
+        "issues": "https://github.com/postyou/contao-form-dispatch-confitmation-bundle/issues",
+        "source": "https://github.com/postyou/contao-form-dispatch-confitmation-bundle"
     },
     "require": {
         "contao/core-bundle": "^4.9"
@@ -27,13 +27,14 @@
     "require-dev": {
         "contao/manager-plugin": "^2.3",
         "contao/test-case": "^4.0",
-        "phpunit/phpunit": "^8.4",
         "symfony/http-client": "4.4.*",
-        "symfony/phpunit-bridge": "4.4.*"
+        "symfony/phpunit-bridge": "4.4.*",
+        "friendsofphp/php-cs-fixer": "3.3.1",
+        "phpstan/phpstan": "^1.9"
     },
     "autoload": {
         "psr-4": {
-            "Postyou\\ContaoFormStatusPopupBundle\\": "src/"
+            "Postyou\\ContaoFormDispatchConfirmationBundle\\": "src/"
         },
         "classmap": [
             "src/Resources/contao"
@@ -46,6 +47,6 @@
         ]
     },
     "extra": {
-        "contao-manager-plugin": "Postyou\\ContaoFormStatusPopupBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Postyou\\ContaoFormDispatchConfirmationBundle\\ContaoManager\\Plugin"
     }
 }

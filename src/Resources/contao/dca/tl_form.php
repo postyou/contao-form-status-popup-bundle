@@ -41,5 +41,5 @@ PaletteManipulator::create()
     ->applyToPalette('default', 'tl_form');
 
 PaletteManipulator::create()
-    ->addField("popup_text")
+    ->addField("popup_text", "show_popup")
     ->applyToSubpalette("show_popup", "tl_form");
